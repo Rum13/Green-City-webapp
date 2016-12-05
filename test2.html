@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<title>Green City frontpage</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+	<script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+	<script type="text/javascript" charset="utf-8">
+		function getValues(){
+      var value = new Array[4];
+      value[0]=$('#grønt').attr('value');
+      value[1]=$('#socialt').attr('value');
+			value[2]=$('#hyggekrog').attr('value');
+			value[3]=$('#spiseligt').attr('value');
+			value[4]=$('#leg').attr('value');
+	}
+	</script>
+
+</head>
+<body>
+
+
+
+	<div data-role="page" data-theme="a">
+
+
+	    <div data-role="header">
+	        <h1>Green City</h1>
+	    </div><!-- /header -->
+
+	    <div data-role="content">
+
+					<label for="camera">Tag eller upload billede:</label>
+					<input type="file" accept="image/*" id= "camera" capture="camera" />
+
+
+					<label for="basic">Beskriv billedet:</label>
+					<input type="text" name="name" id="basic" value="" data-mini="true">
+
+					<label for="grønt">Grønt:</label>
+					<input type="range" name="grønt" id="grønt" value="10" min="0" max="10" data-highlight="true" />
+
+					<label for="socialt">Socialt:</label>
+					<input type="range" name="socialt" id="socialt" value="10" min="0" max="10" data-highlight="true" />
+
+					<label for="hyggekrog">Hyggekrog:</label>
+					<input type="range" name="hyggekrog" id="hyggekrog" value="10" min="0" max="10" data-highlight="true" />
+
+					<label for="spiseligt">Spiseligt:</labelsocialt>
+					<input type="range" name="spiseligtl" id="spiseligt" value="10" min="0" max="10" data-highlight="true" />
+
+					<label for="leg">Leg:</label>
+					<input type="range" name="leg" id="sleg" value="10" min="0" max="10" data-highlight="true" />
+
+					<ul data-role="listview" data-inset="true">
+
+							<li><a href="./longlat-embed.html" data-ajax="false">Indsend</a></li>
+					</ul>
+
+
+	    </div><!-- /content -->
+
+	</div><!-- /page -->
+
+
+</body>
+</html>
